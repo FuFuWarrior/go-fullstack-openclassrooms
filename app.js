@@ -1,6 +1,4 @@
-// MONGODB PASSWORD: RZ5c3WeouQc3nUnq
-//MONGODB CONNECTION: mongodb+srv://fufu:<password>@cluster0-nwh02.mongodb.net/admin?retryWrites=true&w=majority
-// MONGODB 2 : mongodb://fufu:RZ5c3WeouQc3nUnq@cluster0-shard-00-00-nwh02.mongodb.net:27017,cluster0-shard-00-01-nwh02.mongodb.net:27017,cluster0-shard-00-02-nwh02.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority
+
 
 const express = require('express');
 
@@ -18,7 +16,7 @@ app.use(cors());
 
 mongoose.set('useUnifiedTopology', true);
 
-mongoose.connect('mongodb://fufu:RZ5c3WeouQc3nUnq@cluster0-shard-00-00-nwh02.mongodb.net:27017,cluster0-shard-00-01-nwh02.mongodb.net:27017,cluster0-shard-00-02-nwh02.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority',{useNewUrlParser: true})
+mongoose.connect('CONNECTION STRING',{useNewUrlParser: true})
   .then(() => {
     console.log('Successfully connected to MongoDB Atlas!');
   })
